@@ -1,0 +1,3521 @@
+{
+  "name": "SemanticModel",
+  "compatibilityLevel": 1200,
+  "model": {
+    "culture": "ru-RU",
+    "dataSources": [
+      {
+        "name": "SqlServer 10.2.1.92 reports_abom",
+        "connectionString": "Provider=SQLOLEDB;Data Source=10.2.1.92;Initial Catalog=reports_abom;Integrated Security=SSPI;Persist Security Info=false",
+        "impersonationMode": "impersonateAccount",
+        "account": "CORP\\pgbaranov",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlServer"
+          }
+        ]
+      },
+      {
+        "name": "SqlServer 10.2.1.92 reports_abom 2",
+        "connectionString": "Provider=SQLOLEDB;Data Source=10.2.1.92;Integrated Security=SSPI;Persist Security Info=false;Initial Catalog=reports_abom",
+        "impersonationMode": "impersonateAccount",
+        "account": "CORP\\pgbaranov",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlServer"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "name": "contractor",
+        "columns": [
+          {
+            "name": "id",
+            "dataType": "int64",
+            "sourceColumn": "id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "title",
+            "dataType": "string",
+            "sourceColumn": "title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "category_id",
+            "dataType": "int64",
+            "sourceColumn": "category_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "distributor_category_id",
+            "dataType": "int64",
+            "sourceColumn": "distributor_category_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "organisation_form",
+            "dataType": "string",
+            "sourceColumn": "organisation_form",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "full_title",
+            "dataType": "string",
+            "sourceColumn": "full_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "short_title",
+            "dataType": "string",
+            "sourceColumn": "short_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "registration_number",
+            "dataType": "string",
+            "sourceColumn": "registration_number",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "registration_organisation",
+            "dataType": "string",
+            "sourceColumn": "registration_organisation",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "registration_date",
+            "dataType": "string",
+            "sourceColumn": "registration_date",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "fiscal_number",
+            "dataType": "string",
+            "sourceColumn": "fiscal_number",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "quantity_type_id",
+            "dataType": "int64",
+            "sourceColumn": "quantity_type_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "kpp",
+            "dataType": "int64",
+            "sourceColumn": "kpp",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "okpo",
+            "dataType": "int64",
+            "sourceColumn": "okpo",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "contact_id",
+            "dataType": "int64",
+            "sourceColumn": "contact_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "is_online",
+            "dataType": "int64",
+            "sourceColumn": "is_online",
+            "sourceProviderType": "UnsignedTinyInt"
+          },
+          {
+            "name": "is_vat",
+            "dataType": "int64",
+            "sourceColumn": "is_vat",
+            "sourceProviderType": "UnsignedTinyInt"
+          },
+          {
+            "name": "net_id",
+            "dataType": "int64",
+            "sourceColumn": "net_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "user_id",
+            "dataType": "int64",
+            "sourceColumn": "user_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "bank_details_id",
+            "dataType": "int64",
+            "sourceColumn": "bank_details_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "rank",
+            "dataType": "double",
+            "sourceColumn": "rank",
+            "sourceProviderType": "Numeric"
+          },
+          {
+            "name": "access_token",
+            "dataType": "string",
+            "sourceColumn": "access_token",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "status_id",
+            "dataType": "int64",
+            "sourceColumn": "status_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "created",
+            "dataType": "dateTime",
+            "sourceColumn": "created",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "updated",
+            "dataType": "dateTime",
+            "sourceColumn": "updated",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "deleted",
+            "dataType": "dateTime",
+            "sourceColumn": "deleted",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "created_by",
+            "dataType": "int64",
+            "sourceColumn": "created_by",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "updated_by",
+            "dataType": "int64",
+            "sourceColumn": "updated_by",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "document_processing_markup_percent",
+            "dataType": "double",
+            "sourceColumn": "document_processing_markup_percent",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "is_portal_representative",
+            "dataType": "int64",
+            "sourceColumn": "is_portal_representative",
+            "sourceProviderType": "UnsignedTinyInt"
+          },
+          {
+            "name": "type_id",
+            "dataType": "int64",
+            "sourceColumn": "type_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "actual_address_fias_id",
+            "dataType": "int64",
+            "sourceColumn": "actual_address_fias_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "juridical_address_fias_id",
+            "dataType": "int64",
+            "sourceColumn": "juridical_address_fias_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "contract_number",
+            "dataType": "string",
+            "sourceColumn": "contract_number",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "contract_date",
+            "dataType": "string",
+            "sourceColumn": "contract_date",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "discriminator",
+            "dataType": "string",
+            "sourceColumn": "discriminator",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "brand_id",
+            "dataType": "int64",
+            "sourceColumn": "brand_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "maps_to_our_storage_allowed",
+            "dataType": "int64",
+            "sourceColumn": "maps_to_our_storage_allowed",
+            "sourceProviderType": "UnsignedTinyInt"
+          },
+          {
+            "name": "maps_to_not_our_storage_allowed",
+            "dataType": "int64",
+            "sourceColumn": "maps_to_not_our_storage_allowed",
+            "sourceProviderType": "UnsignedTinyInt"
+          },
+          {
+            "name": "is_allowed_losing_trades",
+            "dataType": "int64",
+            "sourceColumn": "is_allowed_losing_trades",
+            "sourceProviderType": "UnsignedTinyInt"
+          },
+          {
+            "name": "transit_price_storage_id",
+            "dataType": "int64",
+            "sourceColumn": "transit_price_storage_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "rating",
+            "dataType": "int64",
+            "sourceColumn": "rating",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "uuid",
+            "dataType": "string",
+            "sourceColumn": "uuid",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "order_items_count",
+            "dataType": "int64",
+            "sourceColumn": "order_items_count",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "total_order_amount",
+            "dataType": "double",
+            "sourceColumn": "total_order_amount",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "contractor_subtype_id",
+            "dataType": "int64",
+            "sourceColumn": "contractor_subtype_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "correct_b2b",
+            "dataType": "int64",
+            "sourceColumn": "correct_b2b",
+            "sourceProviderType": "UnsignedTinyInt"
+          },
+          {
+            "name": "actual_adres",
+            "dataType": "string",
+            "sourceColumn": "actual_adres",
+            "sourceProviderType": "WChar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "contractor",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[contractor].* FROM [dbo].[contractor] ",
+              "dataSource": "SqlServer 10.2.1.92 reports_abom"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[contractor].* FROM [dbo].[contractor] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "contractor"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "document_customer_refusal",
+        "columns": [
+          {
+            "name": "id",
+            "dataType": "int64",
+            "sourceColumn": "id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "reason_id",
+            "dataType": "int64",
+            "sourceColumn": "reason_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "deal_id",
+            "dataType": "int64",
+            "sourceColumn": "deal_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "parent_id",
+            "dataType": "int64",
+            "sourceColumn": "parent_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "customer_comment",
+            "dataType": "string",
+            "sourceColumn": "customer_comment",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_comment",
+            "dataType": "string",
+            "sourceColumn": "supplier_comment",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "status_id",
+            "dataType": "string",
+            "sourceColumn": "status_id",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "created",
+            "dataType": "dateTime",
+            "sourceColumn": "created",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "updated",
+            "dataType": "dateTime",
+            "sourceColumn": "updated",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "amount",
+            "dataType": "double",
+            "sourceColumn": "amount",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "customer_contractor_id",
+            "dataType": "int64",
+            "sourceColumn": "customer_contractor_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "customer_contractor_title",
+            "dataType": "string",
+            "sourceColumn": "customer_contractor_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "customer_contractor_fiscal_number",
+            "dataType": "string",
+            "sourceColumn": "customer_contractor_fiscal_number",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "customer_contractor_address",
+            "dataType": "string",
+            "sourceColumn": "customer_contractor_address",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_contractor_id",
+            "dataType": "int64",
+            "sourceColumn": "supplier_contractor_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "supplier_contractor_title",
+            "dataType": "string",
+            "sourceColumn": "supplier_contractor_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_contractor_fiscal_number",
+            "dataType": "string",
+            "sourceColumn": "supplier_contractor_fiscal_number",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_contractor_address",
+            "dataType": "string",
+            "sourceColumn": "supplier_contractor_address",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "customer_storage_id",
+            "dataType": "int64",
+            "sourceColumn": "customer_storage_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "customer_storage_title",
+            "dataType": "string",
+            "sourceColumn": "customer_storage_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "customer_storage_address",
+            "dataType": "string",
+            "sourceColumn": "customer_storage_address",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_storage_id",
+            "dataType": "int64",
+            "sourceColumn": "supplier_storage_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "supplier_storage_title",
+            "dataType": "string",
+            "sourceColumn": "supplier_storage_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_storage_address",
+            "dataType": "string",
+            "sourceColumn": "supplier_storage_address",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "created_id",
+            "dataType": "int64",
+            "sourceColumn": "created_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "created_name",
+            "dataType": "string",
+            "sourceColumn": "created_name",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "updated_id",
+            "dataType": "int64",
+            "sourceColumn": "updated_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "updated_name",
+            "dataType": "string",
+            "sourceColumn": "updated_name",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "dtype",
+            "dataType": "string",
+            "sourceColumn": "dtype",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "number",
+            "dataType": "string",
+            "sourceColumn": "number",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "opened",
+            "dataType": "boolean",
+            "sourceColumn": "opened",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "Boolean"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "document_customer_refusal",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[document_customer_refusal].* FROM [dbo].[document_customer_refusal] ",
+              "dataSource": "SqlServer 10.2.1.92 reports_abom"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[document_customer_refusal].* FROM [dbo].[document_customer_refusal] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "document_customer_refusal"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "document_customer_refusal_item",
+        "columns": [
+          {
+            "name": "id",
+            "dataType": "int64",
+            "sourceColumn": "id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "refusal_id",
+            "dataType": "int64",
+            "sourceColumn": "refusal_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "order_item_id",
+            "dataType": "int64",
+            "sourceColumn": "order_item_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "comment",
+            "dataType": "string",
+            "sourceColumn": "comment",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "status_id",
+            "dataType": "string",
+            "sourceColumn": "status_id",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "created",
+            "dataType": "dateTime",
+            "sourceColumn": "created",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "updated",
+            "dataType": "dateTime",
+            "sourceColumn": "updated",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "standard_id",
+            "dataType": "int64",
+            "sourceColumn": "standard_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "standard_title",
+            "dataType": "string",
+            "sourceColumn": "standard_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "standard_article",
+            "dataType": "string",
+            "sourceColumn": "standard_article",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "standard_brand_id",
+            "dataType": "int64",
+            "sourceColumn": "standard_brand_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "standard_brand_title",
+            "dataType": "string",
+            "sourceColumn": "standard_brand_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "price",
+            "dataType": "double",
+            "sourceColumn": "price",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "quantity",
+            "dataType": "int64",
+            "sourceColumn": "quantity",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "amount",
+            "dataType": "double",
+            "sourceColumn": "amount",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "customer_product_code",
+            "dataType": "string",
+            "sourceColumn": "customer_product_code",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_product_code",
+            "dataType": "string",
+            "sourceColumn": "supplier_product_code",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "created_id",
+            "dataType": "int64",
+            "sourceColumn": "created_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "created_name",
+            "dataType": "string",
+            "sourceColumn": "created_name",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "updated_id",
+            "dataType": "int64",
+            "sourceColumn": "updated_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "updated_name",
+            "dataType": "string",
+            "sourceColumn": "updated_name",
+            "sourceProviderType": "WChar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "document_customer_refusal_item",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[document_customer_refusal_item].* FROM [dbo].[document_customer_refusal_item] ",
+              "dataSource": "SqlServer 10.2.1.92 reports_abom"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[document_customer_refusal_item].* FROM [dbo].[document_customer_refusal_item] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "document_customer_refusal_item"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "document_order",
+        "columns": [
+          {
+            "name": "id",
+            "dataType": "int64",
+            "sourceColumn": "id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "deal_id",
+            "dataType": "int64",
+            "sourceColumn": "deal_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "parent_id",
+            "dataType": "int64",
+            "sourceColumn": "parent_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "request_id",
+            "dataType": "int64",
+            "sourceColumn": "request_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "status_id",
+            "dataType": "string",
+            "sourceColumn": "status_id",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "created",
+            "dataType": "dateTime",
+            "sourceColumn": "created",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "updated",
+            "dataType": "dateTime",
+            "sourceColumn": "updated",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "conditional_execution_date",
+            "dataType": "dateTime",
+            "sourceColumn": "conditional_execution_date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "amount",
+            "dataType": "double",
+            "sourceColumn": "amount",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "customer_contractor_id",
+            "dataType": "int64",
+            "sourceColumn": "customer_contractor_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "customer_contractor_title",
+            "dataType": "string",
+            "sourceColumn": "customer_contractor_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "customer_contractor_fiscal_number",
+            "dataType": "string",
+            "sourceColumn": "customer_contractor_fiscal_number",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "customer_contractor_address",
+            "dataType": "string",
+            "sourceColumn": "customer_contractor_address",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_contractor_id",
+            "dataType": "int64",
+            "sourceColumn": "supplier_contractor_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "supplier_contractor_title",
+            "dataType": "string",
+            "sourceColumn": "supplier_contractor_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_contractor_fiscal_number",
+            "dataType": "string",
+            "sourceColumn": "supplier_contractor_fiscal_number",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_contractor_address",
+            "dataType": "string",
+            "sourceColumn": "supplier_contractor_address",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "customer_storage_id",
+            "dataType": "int64",
+            "sourceColumn": "customer_storage_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "customer_storage_title",
+            "dataType": "string",
+            "sourceColumn": "customer_storage_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "customer_storage_address",
+            "dataType": "string",
+            "sourceColumn": "customer_storage_address",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_storage_id",
+            "dataType": "int64",
+            "sourceColumn": "supplier_storage_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "supplier_storage_title",
+            "dataType": "string",
+            "sourceColumn": "supplier_storage_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_storage_address",
+            "dataType": "string",
+            "sourceColumn": "supplier_storage_address",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "logistic_map_id",
+            "dataType": "int64",
+            "sourceColumn": "logistic_map_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "logistic_map_name",
+            "dataType": "string",
+            "sourceColumn": "logistic_map_name",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "limit_type_value",
+            "dataType": "double",
+            "sourceColumn": "limit_type_value",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "limit_start_date",
+            "dataType": "dateTime",
+            "sourceColumn": "limit_start_date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "discriminator",
+            "dataType": "string",
+            "sourceColumn": "discriminator",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "planned_shipping_date",
+            "dataType": "dateTime",
+            "sourceColumn": "planned_shipping_date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "is_completely_refused",
+            "dataType": "int64",
+            "sourceColumn": "is_completely_refused",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "logistic_map_packaging_term_hours",
+            "dataType": "int64",
+            "sourceColumn": "logistic_map_packaging_term_hours",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "logistic_map_delivery_term_hours",
+            "dataType": "int64",
+            "sourceColumn": "logistic_map_delivery_term_hours",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "logistic_map_acceptance_term_hours",
+            "dataType": "int64",
+            "sourceColumn": "logistic_map_acceptance_term_hours",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "logistic_map_discriminator",
+            "dataType": "string",
+            "sourceColumn": "logistic_map_discriminator",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "user_ip_address",
+            "dataType": "string",
+            "sourceColumn": "user_ip_address",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "limit_is_storage_limit",
+            "dataType": "boolean",
+            "sourceColumn": "limit_is_storage_limit",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "Boolean"
+          },
+          {
+            "name": "opened",
+            "dataType": "boolean",
+            "sourceColumn": "opened",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "Boolean"
+          },
+          {
+            "name": "limit_id",
+            "dataType": "string",
+            "sourceColumn": "limit_id",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "limit_type",
+            "dataType": "string",
+            "sourceColumn": "limit_type",
+            "sourceProviderType": "WChar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "document_order",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[document_order].* FROM [dbo].[document_order] ",
+              "dataSource": "SqlServer 10.2.1.92 reports_abom"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[document_order].* FROM [dbo].[document_order] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "document_order"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "document_order_item",
+        "columns": [
+          {
+            "name": "id",
+            "dataType": "int64",
+            "sourceColumn": "id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "order_id",
+            "dataType": "int64",
+            "sourceColumn": "order_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "deal_order_item_id",
+            "dataType": "int64",
+            "sourceColumn": "deal_order_item_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "parent_order_item_id",
+            "dataType": "int64",
+            "sourceColumn": "parent_order_item_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "comment",
+            "dataType": "string",
+            "sourceColumn": "comment",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "status_id",
+            "dataType": "string",
+            "sourceColumn": "status_id",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "created",
+            "dataType": "dateTime",
+            "sourceColumn": "created",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "updated",
+            "dataType": "dateTime",
+            "sourceColumn": "updated",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "standard_id",
+            "dataType": "int64",
+            "sourceColumn": "standard_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "standard_title",
+            "dataType": "string",
+            "sourceColumn": "standard_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "standard_article",
+            "dataType": "string",
+            "sourceColumn": "standard_article",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "standard_brand_id",
+            "dataType": "int64",
+            "sourceColumn": "standard_brand_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "standard_brand_title",
+            "dataType": "string",
+            "sourceColumn": "standard_brand_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "price",
+            "dataType": "double",
+            "sourceColumn": "price",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "incoming_price",
+            "dataType": "double",
+            "sourceColumn": "incoming_price",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "quantity",
+            "dataType": "int64",
+            "sourceColumn": "quantity",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "amount",
+            "dataType": "double",
+            "sourceColumn": "amount",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "created_id",
+            "dataType": "int64",
+            "sourceColumn": "created_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "created_name",
+            "dataType": "string",
+            "sourceColumn": "created_name",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "updated_id",
+            "dataType": "int64",
+            "sourceColumn": "updated_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "updated_name",
+            "dataType": "string",
+            "sourceColumn": "updated_name",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "customer_product_code",
+            "dataType": "string",
+            "sourceColumn": "customer_product_code",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_product_code",
+            "dataType": "string",
+            "sourceColumn": "supplier_product_code",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "offer_id",
+            "dataType": "int64",
+            "sourceColumn": "offer_id",
+            "sourceProviderType": "Integer"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "document_order_item",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[document_order_item].* FROM [dbo].[document_order_item] ",
+              "dataSource": "SqlServer 10.2.1.92 reports_abom"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[document_order_item].* FROM [dbo].[document_order_item] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "document_order_item"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "document_shipment",
+        "columns": [
+          {
+            "name": "id",
+            "dataType": "int64",
+            "sourceColumn": "id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "deal_id",
+            "dataType": "int64",
+            "sourceColumn": "deal_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "parent_id",
+            "dataType": "int64",
+            "sourceColumn": "parent_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "customer_comment",
+            "dataType": "string",
+            "sourceColumn": "customer_comment",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_comment",
+            "dataType": "string",
+            "sourceColumn": "supplier_comment",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "status_id",
+            "dataType": "string",
+            "sourceColumn": "status_id",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "created",
+            "dataType": "dateTime",
+            "sourceColumn": "created",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "updated",
+            "dataType": "dateTime",
+            "sourceColumn": "updated",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "shipment_date",
+            "dataType": "dateTime",
+            "sourceColumn": "shipment_date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "arrival_date",
+            "dataType": "dateTime",
+            "sourceColumn": "arrival_date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "arrival_time",
+            "dataType": "int64",
+            "sourceColumn": "arrival_time",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "upd_number",
+            "dataType": "string",
+            "sourceColumn": "upd_number",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "invoice_number",
+            "dataType": "string",
+            "sourceColumn": "invoice_number",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "external_id",
+            "dataType": "string",
+            "sourceColumn": "external_id",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "containers_count",
+            "dataType": "int64",
+            "sourceColumn": "containers_count",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "amount",
+            "dataType": "double",
+            "sourceColumn": "amount",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "customer_contractor_id",
+            "dataType": "int64",
+            "sourceColumn": "customer_contractor_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "customer_contractor_title",
+            "dataType": "string",
+            "sourceColumn": "customer_contractor_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "customer_contractor_fiscal_number",
+            "dataType": "string",
+            "sourceColumn": "customer_contractor_fiscal_number",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "customer_contractor_address",
+            "dataType": "string",
+            "sourceColumn": "customer_contractor_address",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_contractor_id",
+            "dataType": "int64",
+            "sourceColumn": "supplier_contractor_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "supplier_contractor_title",
+            "dataType": "string",
+            "sourceColumn": "supplier_contractor_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_contractor_fiscal_number",
+            "dataType": "string",
+            "sourceColumn": "supplier_contractor_fiscal_number",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_contractor_address",
+            "dataType": "string",
+            "sourceColumn": "supplier_contractor_address",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "customer_storage_id",
+            "dataType": "int64",
+            "sourceColumn": "customer_storage_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "customer_storage_title",
+            "dataType": "string",
+            "sourceColumn": "customer_storage_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "customer_storage_address",
+            "dataType": "string",
+            "sourceColumn": "customer_storage_address",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_storage_id",
+            "dataType": "int64",
+            "sourceColumn": "supplier_storage_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "supplier_storage_title",
+            "dataType": "string",
+            "sourceColumn": "supplier_storage_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_storage_address",
+            "dataType": "string",
+            "sourceColumn": "supplier_storage_address",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "created_id",
+            "dataType": "int64",
+            "sourceColumn": "created_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "created_name",
+            "dataType": "string",
+            "sourceColumn": "created_name",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "updated_id",
+            "dataType": "int64",
+            "sourceColumn": "updated_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "updated_name",
+            "dataType": "string",
+            "sourceColumn": "updated_name",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "driver_phone",
+            "dataType": "string",
+            "sourceColumn": "driver_phone",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "driver_last_name",
+            "dataType": "string",
+            "sourceColumn": "driver_last_name",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "driver_first_name",
+            "dataType": "string",
+            "sourceColumn": "driver_first_name",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "driver_middle_name",
+            "dataType": "string",
+            "sourceColumn": "driver_middle_name",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "truck_model",
+            "dataType": "string",
+            "sourceColumn": "truck_model",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "truck_number",
+            "dataType": "string",
+            "sourceColumn": "truck_number",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "truck_tonnage",
+            "dataType": "double",
+            "sourceColumn": "truck_tonnage",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "discriminator",
+            "dataType": "string",
+            "sourceColumn": "discriminator",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "conditional_execution_date",
+            "dataType": "string",
+            "sourceColumn": "conditional_execution_date",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "number",
+            "dataType": "string",
+            "sourceColumn": "number",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "api_mark_processed_by_customer",
+            "dataType": "boolean",
+            "sourceColumn": "api_mark_processed_by_customer",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "Boolean"
+          },
+          {
+            "name": "api_mark_processed_by_supplier",
+            "dataType": "boolean",
+            "sourceColumn": "api_mark_processed_by_supplier",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "Boolean"
+          },
+          {
+            "name": "opened",
+            "dataType": "boolean",
+            "sourceColumn": "opened",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "Boolean"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "document_shipment",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[document_shipment].* FROM [dbo].[document_shipment] ",
+              "dataSource": "SqlServer 10.2.1.92 reports_abom"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[document_shipment].* FROM [dbo].[document_shipment] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "document_shipment"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "document_shipment_item",
+        "columns": [
+          {
+            "name": "id",
+            "dataType": "int64",
+            "sourceColumn": "id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "shipment_id",
+            "dataType": "int64",
+            "sourceColumn": "shipment_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "order_item_id",
+            "dataType": "int64",
+            "sourceColumn": "order_item_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "comment",
+            "dataType": "string",
+            "sourceColumn": "comment",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "container_number",
+            "dataType": "string",
+            "sourceColumn": "container_number",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "acceptance_date",
+            "dataType": "string",
+            "sourceColumn": "acceptance_date",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "status_id",
+            "dataType": "string",
+            "sourceColumn": "status_id",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "created",
+            "dataType": "dateTime",
+            "sourceColumn": "created",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "updated",
+            "dataType": "dateTime",
+            "sourceColumn": "updated",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "standard_id",
+            "dataType": "int64",
+            "sourceColumn": "standard_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "standard_title",
+            "dataType": "string",
+            "sourceColumn": "standard_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "standard_article",
+            "dataType": "string",
+            "sourceColumn": "standard_article",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "standard_brand_id",
+            "dataType": "int64",
+            "sourceColumn": "standard_brand_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "standard_brand_title",
+            "dataType": "string",
+            "sourceColumn": "standard_brand_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "price",
+            "dataType": "double",
+            "sourceColumn": "price",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "quantity",
+            "dataType": "int64",
+            "sourceColumn": "quantity",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "amount",
+            "dataType": "double",
+            "sourceColumn": "amount",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "created_id",
+            "dataType": "int64",
+            "sourceColumn": "created_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "created_name",
+            "dataType": "string",
+            "sourceColumn": "created_name",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "updated_id",
+            "dataType": "int64",
+            "sourceColumn": "updated_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "updated_name",
+            "dataType": "string",
+            "sourceColumn": "updated_name",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "customer_product_code",
+            "dataType": "string",
+            "sourceColumn": "customer_product_code",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_product_code",
+            "dataType": "string",
+            "sourceColumn": "supplier_product_code",
+            "sourceProviderType": "WChar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "document_shipment_item",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[document_shipment_item].* FROM [dbo].[document_shipment_item] ",
+              "dataSource": "SqlServer 10.2.1.92 reports_abom"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[document_shipment_item].* FROM [dbo].[document_shipment_item] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "document_shipment_item"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "document_supplier_refusal",
+        "columns": [
+          {
+            "name": "id",
+            "dataType": "int64",
+            "sourceColumn": "id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "deal_id",
+            "dataType": "int64",
+            "sourceColumn": "deal_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "parent_id",
+            "dataType": "int64",
+            "sourceColumn": "parent_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "reason_id",
+            "dataType": "int64",
+            "sourceColumn": "reason_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "customer_comment",
+            "dataType": "string",
+            "sourceColumn": "customer_comment",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_comment",
+            "dataType": "string",
+            "sourceColumn": "supplier_comment",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "status_id",
+            "dataType": "string",
+            "sourceColumn": "status_id",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "created",
+            "dataType": "dateTime",
+            "sourceColumn": "created",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "updated",
+            "dataType": "dateTime",
+            "sourceColumn": "updated",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "amount",
+            "dataType": "double",
+            "sourceColumn": "amount",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "customer_contractor_id",
+            "dataType": "int64",
+            "sourceColumn": "customer_contractor_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "customer_contractor_title",
+            "dataType": "string",
+            "sourceColumn": "customer_contractor_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "customer_contractor_fiscal_number",
+            "dataType": "string",
+            "sourceColumn": "customer_contractor_fiscal_number",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "customer_contractor_address",
+            "dataType": "string",
+            "sourceColumn": "customer_contractor_address",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_contractor_id",
+            "dataType": "int64",
+            "sourceColumn": "supplier_contractor_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "supplier_contractor_title",
+            "dataType": "string",
+            "sourceColumn": "supplier_contractor_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_contractor_fiscal_number",
+            "dataType": "string",
+            "sourceColumn": "supplier_contractor_fiscal_number",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_contractor_address",
+            "dataType": "string",
+            "sourceColumn": "supplier_contractor_address",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "customer_storage_id",
+            "dataType": "int64",
+            "sourceColumn": "customer_storage_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "customer_storage_title",
+            "dataType": "string",
+            "sourceColumn": "customer_storage_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "customer_storage_address",
+            "dataType": "string",
+            "sourceColumn": "customer_storage_address",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_storage_id",
+            "dataType": "int64",
+            "sourceColumn": "supplier_storage_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "supplier_storage_title",
+            "dataType": "string",
+            "sourceColumn": "supplier_storage_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_storage_address",
+            "dataType": "string",
+            "sourceColumn": "supplier_storage_address",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "created_id",
+            "dataType": "int64",
+            "sourceColumn": "created_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "created_name",
+            "dataType": "string",
+            "sourceColumn": "created_name",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "updated_id",
+            "dataType": "int64",
+            "sourceColumn": "updated_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "updated_name",
+            "dataType": "string",
+            "sourceColumn": "updated_name",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "number",
+            "dataType": "string",
+            "sourceColumn": "number",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "api_mark_processed_by_customer",
+            "dataType": "boolean",
+            "sourceColumn": "api_mark_processed_by_customer",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "Boolean"
+          },
+          {
+            "name": "api_mark_processed_by_supplier",
+            "dataType": "boolean",
+            "sourceColumn": "api_mark_processed_by_supplier",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "Boolean"
+          },
+          {
+            "name": "opened",
+            "dataType": "boolean",
+            "sourceColumn": "opened",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "Boolean"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "document_supplier_refusal",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[document_supplier_refusal].* FROM [dbo].[document_supplier_refusal] ",
+              "dataSource": "SqlServer 10.2.1.92 reports_abom"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[document_supplier_refusal].* FROM [dbo].[document_supplier_refusal] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "document_supplier_refusal"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "document_supplier_refusal_item",
+        "columns": [
+          {
+            "name": "id",
+            "dataType": "int64",
+            "sourceColumn": "id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "refusal_id",
+            "dataType": "int64",
+            "sourceColumn": "refusal_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "order_item_id",
+            "dataType": "int64",
+            "sourceColumn": "order_item_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "comment",
+            "dataType": "string",
+            "sourceColumn": "comment",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "status_id",
+            "dataType": "string",
+            "sourceColumn": "status_id",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "created",
+            "dataType": "dateTime",
+            "sourceColumn": "created",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "updated",
+            "dataType": "dateTime",
+            "sourceColumn": "updated",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "standard_id",
+            "dataType": "int64",
+            "sourceColumn": "standard_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "standard_title",
+            "dataType": "string",
+            "sourceColumn": "standard_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "standard_article",
+            "dataType": "string",
+            "sourceColumn": "standard_article",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "standard_brand_id",
+            "dataType": "int64",
+            "sourceColumn": "standard_brand_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "standard_brand_title",
+            "dataType": "string",
+            "sourceColumn": "standard_brand_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "price",
+            "dataType": "double",
+            "sourceColumn": "price",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "quantity",
+            "dataType": "int64",
+            "sourceColumn": "quantity",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "amount",
+            "dataType": "double",
+            "sourceColumn": "amount",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "created_id",
+            "dataType": "int64",
+            "sourceColumn": "created_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "created_name",
+            "dataType": "string",
+            "sourceColumn": "created_name",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "updated_id",
+            "dataType": "int64",
+            "sourceColumn": "updated_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "updated_name",
+            "dataType": "string",
+            "sourceColumn": "updated_name",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "customer_product_code",
+            "dataType": "string",
+            "sourceColumn": "customer_product_code",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "supplier_product_code",
+            "dataType": "string",
+            "sourceColumn": "supplier_product_code",
+            "sourceProviderType": "WChar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "document_supplier_refusal_item",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[document_supplier_refusal_item].* FROM [dbo].[document_supplier_refusal_item] ",
+              "dataSource": "SqlServer 10.2.1.92 reports_abom"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[document_supplier_refusal_item].* FROM [dbo].[document_supplier_refusal_item] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "document_supplier_refusal_item"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "standard",
+        "columns": [
+          {
+            "name": "id",
+            "dataType": "int64",
+            "sourceColumn": "id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "title",
+            "dataType": "string",
+            "sourceColumn": "title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "article",
+            "dataType": "string",
+            "sourceColumn": "article",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "barcode",
+            "dataType": "string",
+            "sourceColumn": "barcode",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "quantity_type_id",
+            "dataType": "int64",
+            "sourceColumn": "quantity_type_id",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "length",
+            "dataType": "double",
+            "sourceColumn": "length",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "height",
+            "dataType": "double",
+            "sourceColumn": "height",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "width",
+            "dataType": "double",
+            "sourceColumn": "width",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "weight",
+            "dataType": "double",
+            "sourceColumn": "weight",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "multiplicity",
+            "dataType": "int64",
+            "sourceColumn": "multiplicity",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "zone_id",
+            "dataType": "int64",
+            "sourceColumn": "zone_id",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "zone_title",
+            "dataType": "string",
+            "sourceColumn": "zone_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "original_sign",
+            "dataType": "double",
+            "sourceColumn": "original_sign",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "file_id",
+            "dataType": "int64",
+            "sourceColumn": "file_id",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "description",
+            "dataType": "string",
+            "sourceColumn": "description",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "certificate_id",
+            "dataType": "int64",
+            "sourceColumn": "certificate_id",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "category_id",
+            "dataType": "int64",
+            "sourceColumn": "category_id",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "productor_id",
+            "dataType": "int64",
+            "sourceColumn": "productor_id",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "brand_id",
+            "dataType": "int64",
+            "sourceColumn": "brand_id",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "brand_title",
+            "dataType": "string",
+            "sourceColumn": "brand_title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "contract_type",
+            "dataType": "string",
+            "sourceColumn": "contract_type",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "product_group",
+            "dataType": "string",
+            "sourceColumn": "product_group",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "twoness_id",
+            "dataType": "int64",
+            "sourceColumn": "twoness_id",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "parent_id_synonym",
+            "dataType": "int64",
+            "sourceColumn": "parent_id_synonym",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "created",
+            "dataType": "dateTime",
+            "sourceColumn": "created",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "updated",
+            "dataType": "dateTime",
+            "sourceColumn": "updated",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "deleted",
+            "dataType": "dateTime",
+            "sourceColumn": "deleted",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "created_by",
+            "dataType": "int64",
+            "sourceColumn": "created_by",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "updated_by",
+            "dataType": "int64",
+            "sourceColumn": "updated_by",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "is_belong_main_regulation",
+            "dataType": "int64",
+            "sourceColumn": "is_belong_main_regulation",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "reqzone_id",
+            "dataType": "int64",
+            "sourceColumn": "reqzone_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "is_has_recommended",
+            "dataType": "int64",
+            "sourceColumn": "is_has_recommended",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "is_marked",
+            "dataType": "boolean",
+            "sourceColumn": "is_marked",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "Boolean"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "standard",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[standard].* FROM [dbo].[standard] ",
+              "dataSource": "SqlServer 10.2.1.92 reports_abom"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[standard].* FROM [dbo].[standard] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "standard"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "storage",
+        "columns": [
+          {
+            "name": "id",
+            "dataType": "int64",
+            "sourceColumn": "id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "title",
+            "dataType": "string",
+            "sourceColumn": "title",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "complete_term",
+            "dataType": "int64",
+            "sourceColumn": "complete_term",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "processing_markup_percent",
+            "dataType": "double",
+            "sourceColumn": "processing_markup_percent",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "processing_for_their_markup_percent",
+            "dataType": "double",
+            "sourceColumn": "processing_for_their_markup_percent",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "contractor_id",
+            "dataType": "int64",
+            "sourceColumn": "contractor_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "fias_id",
+            "dataType": "int64",
+            "sourceColumn": "fias_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "status_id",
+            "dataType": "int64",
+            "sourceColumn": "status_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "created",
+            "dataType": "dateTime",
+            "sourceColumn": "created",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "updated",
+            "dataType": "dateTime",
+            "sourceColumn": "updated",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "deleted",
+            "dataType": "dateTime",
+            "sourceColumn": "deleted",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "created_by",
+            "dataType": "int64",
+            "sourceColumn": "created_by",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "updated_by",
+            "dataType": "int64",
+            "sourceColumn": "updated_by",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "time_zone",
+            "dataType": "string",
+            "sourceColumn": "time_zone",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "disable_transit",
+            "dataType": "int64",
+            "sourceColumn": "disable_transit",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "price_list_id",
+            "dataType": "int64",
+            "sourceColumn": "price_list_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "is_hidden",
+            "dataType": "int64",
+            "sourceColumn": "is_hidden",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "contract_id",
+            "dataType": "int64",
+            "sourceColumn": "contract_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "clipping_time",
+            "dataType": "dateTime",
+            "sourceColumn": "clipping_time",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "product_reserve_updated",
+            "dataType": "dateTime",
+            "sourceColumn": "product_reserve_updated",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "actual_address",
+            "dataType": "string",
+            "sourceColumn": "actual_address",
+            "sourceProviderType": "WChar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "storage",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[storage].* FROM [dbo].[storage] ",
+              "dataSource": "SqlServer 10.2.1.92 reports_abom"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[storage].* FROM [dbo].[storage] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "storage"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "ABC_tabular",
+        "columns": [
+          {
+            "name": "order_id",
+            "dataType": "int64",
+            "sourceColumn": "order_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "customer_contractor_id",
+            "dataType": "int64",
+            "sourceColumn": "customer_contractor_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "contractor",
+            "dataType": "string",
+            "sourceColumn": "contractor",
+            "sourceProviderType": "VarChar"
+          },
+          {
+            "name": "customer_storage",
+            "dataType": "string",
+            "sourceColumn": "customer_storage",
+            "sourceProviderType": "VarChar"
+          },
+          {
+            "name": "customer_storage_id",
+            "dataType": "int64",
+            "sourceColumn": "customer_storage_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "supplier_id",
+            "dataType": "int64",
+            "sourceColumn": "supplier_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "supplier",
+            "dataType": "string",
+            "sourceColumn": "supplier",
+            "sourceProviderType": "VarChar"
+          },
+          {
+            "name": "supplier_storage_id",
+            "dataType": "int64",
+            "sourceColumn": "supplier_storage_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "supplier_storage_title",
+            "dataType": "string",
+            "sourceColumn": "supplier_storage_title",
+            "sourceProviderType": "VarChar"
+          },
+          {
+            "name": "article",
+            "dataType": "string",
+            "sourceColumn": "article",
+            "sourceProviderType": "VarChar"
+          },
+          {
+            "name": "brand_title",
+            "dataType": "string",
+            "sourceColumn": "brand_title",
+            "sourceProviderType": "VarChar"
+          },
+          {
+            "name": "date_document",
+            "dataType": "dateTime",
+            "sourceColumn": "date_document",
+            "formatString": "General Date",
+            "sourceProviderType": "Date"
+          },
+          {
+            "name": "price_document",
+            "dataType": "double",
+            "sourceColumn": "price_document",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "type_document",
+            "dataType": "string",
+            "sourceColumn": "type_document",
+            "sourceProviderType": "VarChar"
+          },
+          {
+            "name": "quantity_in_document",
+            "dataType": "int64",
+            "sourceColumn": "quantity_in_document",
+            "sourceProviderType": "Integer"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Запрос",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": [
+                "SELECT ",
+                "",
+                "dor.id AS order_id, ",
+                "",
+                "ct.id AS customer_contractor_id, ",
+                "",
+                "ct.title AS contractor, ",
+                "",
+                "st.title AS customer_storage, ",
+                "",
+                "st.id  AS customer_storage_id, ",
+                "",
+                "ct1.id AS supplier_id, ",
+                "",
+                "ct1.title AS supplier, ",
+                "",
+                "st1.id AS supplier_storage_id, ",
+                "",
+                "st1.title AS supplier_storage_title, ",
+                "",
+                "dori.standard_article AS article, ",
+                "",
+                "dori.standard_brand_title AS brand_title, ",
+                "",
+                "doc.document_date AS date_document, ",
+                "",
+                "doc.document_price AS price_document,",
+                "doc.type_of_document AS type_document, ",
+                "",
+                "doc.quantity_in_document AS quantity_in_document ",
+                " ",
+                "",
+                "",
+                "FROM document_order AS dor ",
+                " ",
+                "",
+                "JOIN document_order_item AS dori ",
+                "",
+                "ON dor.id = dori.order_id ",
+                " ",
+                "",
+                "",
+                "JOIN contractor AS ct ",
+                "",
+                "ON dor.customer_contractor_id = ct.id ",
+                "",
+                "",
+                "",
+                "JOIN contractor AS ct1 ",
+                "",
+                "ON dor.supplier_contractor_id = ct1.id ",
+                " ",
+                "",
+                "",
+                "JOIN storage AS st ",
+                "",
+                "ON st.id = dor.customer_storage_id ",
+                "",
+                "",
+                "",
+                "JOIN storage AS st1 ",
+                "",
+                "ON st1.id = dor.supplier_storage_id ",
+                "",
+                "",
+                "",
+                "LEFT JOIN (SELECT ",
+                "",
+                "dsi.order_item_id AS document_id, ",
+                "",
+                "dsi.amount AS document_price, ",
+                "",
+                "dsi.created AS document_date, ",
+                "",
+                "dsi.quantity AS quantity_in_document,",
+                "'shipment' AS type_of_document ",
+                "",
+                "FROM document_shipment_item AS dsi ",
+                " ",
+                "",
+                "",
+                "UNION",
+                " ",
+                "",
+                "",
+                "SELECT ",
+                "",
+                "dcri.order_item_id AS document_id, ",
+                "",
+                "dcri.amount AS document_price, ",
+                "",
+                "dcri.created AS document_date, ",
+                "",
+                "dcri.quantity AS quantity_in_document,",
+                "'customer_refusal' AS type_of_document ",
+                "",
+                "",
+                "",
+                "FROM document_customer_refusal_item AS dcri ",
+                "",
+                "",
+                "",
+                "UNION ",
+                "",
+                "",
+                "",
+                "SELECT ",
+                "",
+                "dsri.order_item_id AS document_id, ",
+                "",
+                "dsri.amount AS document_price, ",
+                "",
+                "dsri.created AS document_date, ",
+                "",
+                "dsri.quantity AS quantity_in_document,",
+                "'supplier_refusal' AS type_of_document ",
+                "",
+                "FROM document_supplier_refusal_item AS dsri ",
+                "",
+                "",
+                "",
+                "UNION ",
+                "",
+                "",
+                "",
+                "SELECT ",
+                "",
+                "dori.id AS dociment_id, ",
+                "",
+                "dori.amount AS document_price, ",
+                "",
+                "dori.created AS document_date, ",
+                "",
+                "dori.quantity AS quantity_in_document,",
+                "'order' AS type_of_document ",
+                "",
+                "",
+                "",
+                "FROM document_order_item AS dori ) AS doc ",
+                "",
+                "ON dori.id = doc.document_id ",
+                "",
+                "",
+                "",
+                "WHERE YEAR(dor.created) >= 2021"
+              ],
+              "dataSource": "SqlServer 10.2.1.92 reports_abom 2"
+            },
+            "annotations": [
+              {
+                "name": "QueryEditorSerialization",
+                "value": [
+                  "<?xml version=\"1.0\" encoding=\"UTF-16\"?><Gemini xmlns=\"QueryEditorSerialization\"><AnnotationContent><![CDATA[<RSQueryCommandText>SELECT ",
+                  "",
+                  "dor.id AS order_id, ",
+                  "",
+                  "ct.id AS customer_contractor_id, ",
+                  "",
+                  "ct.title AS contractor, ",
+                  "",
+                  "st.title AS customer_storage, ",
+                  "",
+                  "st.id  AS customer_storage_id, ",
+                  "",
+                  "ct1.id AS supplier_id, ",
+                  "",
+                  "ct1.title AS supplier, ",
+                  "",
+                  "st1.id AS supplier_storage_id, ",
+                  "",
+                  "st1.title AS supplier_storage_title, ",
+                  "",
+                  "dori.standard_article AS article, ",
+                  "",
+                  "dori.standard_brand_title AS brand_title, ",
+                  "",
+                  "doc.document_date AS date_document, ",
+                  "",
+                  "doc.document_price AS price_document,",
+                  "doc.type_of_document AS type_document, ",
+                  "",
+                  "doc.quantity_in_document AS quantity_in_document ",
+                  " ",
+                  "",
+                  "",
+                  "FROM document_order AS dor ",
+                  " ",
+                  "",
+                  "JOIN document_order_item AS dori ",
+                  "",
+                  "ON dor.id = dori.order_id ",
+                  " ",
+                  "",
+                  "",
+                  "JOIN contractor AS ct ",
+                  "",
+                  "ON dor.customer_contractor_id = ct.id ",
+                  "",
+                  "",
+                  "",
+                  "JOIN contractor AS ct1 ",
+                  "",
+                  "ON dor.supplier_contractor_id = ct1.id ",
+                  " ",
+                  "",
+                  "",
+                  "JOIN storage AS st ",
+                  "",
+                  "ON st.id = dor.customer_storage_id ",
+                  "",
+                  "",
+                  "",
+                  "JOIN storage AS st1 ",
+                  "",
+                  "ON st1.id = dor.supplier_storage_id ",
+                  "",
+                  "",
+                  "",
+                  "LEFT JOIN (SELECT ",
+                  "",
+                  "dsi.order_item_id AS document_id, ",
+                  "",
+                  "dsi.amount AS document_price, ",
+                  "",
+                  "dsi.created AS document_date, ",
+                  "",
+                  "dsi.quantity AS quantity_in_document,",
+                  "'shipment' AS type_of_document ",
+                  "",
+                  "FROM document_shipment_item AS dsi ",
+                  " ",
+                  "",
+                  "",
+                  "UNION",
+                  " ",
+                  "",
+                  "",
+                  "SELECT ",
+                  "",
+                  "dcri.order_item_id AS document_id, ",
+                  "",
+                  "dcri.amount AS document_price, ",
+                  "",
+                  "dcri.created AS document_date, ",
+                  "",
+                  "dcri.quantity AS quantity_in_document,",
+                  "'customer_refusal' AS type_of_document ",
+                  "",
+                  "",
+                  "",
+                  "FROM document_customer_refusal_item AS dcri ",
+                  "",
+                  "",
+                  "",
+                  "UNION ",
+                  "",
+                  "",
+                  "",
+                  "SELECT ",
+                  "",
+                  "dsri.order_item_id AS document_id, ",
+                  "",
+                  "dsri.amount AS document_price, ",
+                  "",
+                  "dsri.created AS document_date, ",
+                  "",
+                  "dsri.quantity AS quantity_in_document,",
+                  "'supplier_refusal' AS type_of_document ",
+                  "",
+                  "FROM document_supplier_refusal_item AS dsri ",
+                  "",
+                  "",
+                  "",
+                  "UNION ",
+                  "",
+                  "",
+                  "",
+                  "SELECT ",
+                  "",
+                  "dori.id AS dociment_id, ",
+                  "",
+                  "dori.amount AS document_price, ",
+                  "",
+                  "dori.created AS document_date, ",
+                  "",
+                  "dori.quantity AS quantity_in_document,",
+                  "'order' AS type_of_document ",
+                  "",
+                  "",
+                  "",
+                  "FROM document_order_item AS dori ) AS doc ",
+                  "",
+                  "ON dori.id = doc.document_id ",
+                  "",
+                  "",
+                  "",
+                  "WHERE YEAR(dor.created) >= 2021</RSQueryCommandText><RSQueryCommandType>Text</RSQueryCommandType><RSQueryDesignState></RSQueryDesignState>]]></AnnotationContent></Gemini>"
+                ]
+              }
+            ]
+          }
+        ],
+        "measures": [
+          {
+            "name": "cusref_date",
+            "expression": " CALCULATE(MIN('ABC_tabular'[date_document]), 'ABC_tabular'[type_document] = \"customer_refusal\")"
+          },
+          {
+            "name": "cusref_quantity",
+            "expression": " CALCULATE(MIN('ABC_tabular'[quantity_in_document]), 'ABC_tabular'[type_document] = \"customer_refusal\")"
+          },
+          {
+            "name": "cusref_type",
+            "expression": " CALCULATE(MAX('ABC_tabular'[type_document]), 'ABC_tabular'[type_document] = \"customer_refusal\")"
+          },
+          {
+            "name": "order_date",
+            "expression": " CALCULATE(MIN('ABC_tabular'[date_document]), 'ABC_tabular'[type_document] = \"order\")"
+          },
+          {
+            "name": "order_price",
+            "expression": " CALCULATE(SUM('ABC_tabular'[price_document]) , 'ABC_tabular'[type_document] = \"order\")"
+          },
+          {
+            "name": "order_quantity",
+            "expression": " CALCULATE(MIN('ABC_tabular'[quantity_in_document]), 'ABC_tabular'[type_document] = \"order\")"
+          },
+          {
+            "name": "order_type",
+            "expression": " CALCULATE(MIN('ABC_tabular'[type_document]), 'ABC_tabular'[type_document] = \"order\")"
+          },
+          {
+            "name": "ship_date",
+            "expression": " CALCULATE(MIN('ABC_tabular'[date_document]), 'ABC_tabular'[type_document] = \"shipment\")"
+          },
+          {
+            "name": "ship_price",
+            "expression": " CALCULATE(SUM('ABC_tabular'[price_document]), 'ABC_tabular'[type_document] = \"shipment\")"
+          },
+          {
+            "name": "ship_qantity",
+            "expression": " CALCULATE(MIN('ABC_tabular'[quantity_in_document]), 'ABC_tabular'[type_document] = \"shipment\")"
+          },
+          {
+            "name": "ship_type",
+            "expression": " CALCULATE(MIN('ABC_tabular'[type_document]), 'ABC_tabular'[type_document] = \"shipment\")"
+          },
+          {
+            "name": "supref_date",
+            "expression": " CALCULATE(MIN('ABC_tabular'[date_document]), 'ABC_tabular'[type_document] = \"supplier_refusal\")"
+          },
+          {
+            "name": "cusref_price",
+            "expression": " CALCULATE(SUM(ABC_tabular[price_document]), ABC_tabular[type_document] = \"customer_refusal\")"
+          },
+          {
+            "name": "supref_price",
+            "expression": " CALCULATE(SUM('ABC_tabular'[price_document]), 'ABC_tabular'[type_document] = \"supplier_refusal\")"
+          },
+          {
+            "name": "supref_quantity",
+            "expression": " CALCULATE(MIN('ABC_tabular'[quantity_in_document]), 'ABC_tabular'[type_document] = \"supplier_refusal\")"
+          },
+          {
+            "name": "supref_type",
+            "expression": " CALCULATE(MIN('ABC_tabular'[type_document]), 'ABC_tabular'[type_document] = \"supplier_refusal\")"
+          },
+          {
+            "name": "abc_class",
+            "expression": [
+              " ",
+              "VAR actual_perc = [percent]",
+              "VAR min_slider = MIN('slider'[perc])",
+              "VAR max_slider = MAX('slider'[perc])",
+              "VAR res = ",
+              "SWITCH(",
+              "    TRUE,",
+              "    actual_perc >= min_slider && actual_perc <= max_slider,\"B\",",
+              "    actual_perc < min_slider, \"A\",",
+              "    actual_perc > min_slider, \"C\"",
+              ")",
+              "RETURN res"
+            ]
+          },
+          {
+            "name": "cumulated_sales",
+            "expression": [
+              " ",
+              "VAR current_revenue = 'ABC_tabular'[ship_price]",
+              "VAR summarize_table = ",
+              "SUMMARIZE(",
+              "    ALLSELECTED('ABC_tabular'),",
+              "    ABC_tabular[brand_title],",
+              "    \"Revenue\", 'ABC_tabular'[ship_price]",
+              ")",
+              "VAR cumulutive_sum = ",
+              "SUMX(",
+              "    FILTER(summarize_table, [Revenue] >= current_revenue),",
+              "    [Revenue]",
+              ")",
+              "RETURN cumulutive_sum"
+            ]
+          },
+          {
+            "name": "percent",
+            "expression": [
+              " ",
+              "DIVIDE(",
+              "'ABC_tabular'[cumulated_sales], ",
+              "CALCULATE(",
+              "\t'ABC_tabular'[ship_price], ",
+              "\tALLEXCEPT(",
+              "\t\t'ABC_tabular',",
+              "\t\t ABC_tabular[date_document]",
+              "\t\t )",
+              "\t)",
+              ")"
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": [
+              "SELECT ",
+              "",
+              "dor.id AS order_id, ",
+              "",
+              "ct.id AS customer_contractor_id, ",
+              "",
+              "ct.title AS contractor, ",
+              "",
+              "st.title AS customer_storage, ",
+              "",
+              "st.id  AS customer_storage_id, ",
+              "",
+              "ct1.id AS supplier_id, ",
+              "",
+              "ct1.title AS supplier, ",
+              "",
+              "st1.id AS supplier_storage_id, ",
+              "",
+              "st1.title AS supplier_storage_title, ",
+              "",
+              "dori.standard_article AS article, ",
+              "",
+              "dori.standard_brand_title AS brand_title, ",
+              "",
+              "doc.document_date AS date_document, ",
+              "",
+              "doc.document_price AS price_document,",
+              "doc.type_of_document AS type_document, ",
+              "",
+              "doc.quantity_in_document AS quantity_in_document ",
+              " ",
+              "",
+              "",
+              "FROM document_order AS dor ",
+              " ",
+              "",
+              "JOIN document_order_item AS dori ",
+              "",
+              "ON dor.id = dori.order_id ",
+              " ",
+              "",
+              "",
+              "JOIN contractor AS ct ",
+              "",
+              "ON dor.customer_contractor_id = ct.id ",
+              "",
+              "",
+              "",
+              "JOIN contractor AS ct1 ",
+              "",
+              "ON dor.supplier_contractor_id = ct1.id ",
+              " ",
+              "",
+              "",
+              "JOIN storage AS st ",
+              "",
+              "ON st.id = dor.customer_storage_id ",
+              "",
+              "",
+              "",
+              "JOIN storage AS st1 ",
+              "",
+              "ON st1.id = dor.supplier_storage_id ",
+              "",
+              "",
+              "",
+              "LEFT JOIN (SELECT ",
+              "",
+              "dsi.order_item_id AS document_id, ",
+              "",
+              "dsi.amount AS document_price, ",
+              "",
+              "dsi.created AS document_date, ",
+              "",
+              "dsi.quantity AS quantity_in_document,",
+              "'shipment' AS type_of_document ",
+              "",
+              "FROM document_shipment_item AS dsi ",
+              " ",
+              "",
+              "",
+              "UNION",
+              " ",
+              "",
+              "",
+              "SELECT ",
+              "",
+              "dcri.order_item_id AS document_id, ",
+              "",
+              "dcri.amount AS document_price, ",
+              "",
+              "dcri.created AS document_date, ",
+              "",
+              "dcri.quantity AS quantity_in_document,",
+              "'customer_refusal' AS type_of_document ",
+              "",
+              "",
+              "",
+              "FROM document_customer_refusal_item AS dcri ",
+              "",
+              "",
+              "",
+              "UNION ",
+              "",
+              "",
+              "",
+              "SELECT ",
+              "",
+              "dsri.order_item_id AS document_id, ",
+              "",
+              "dsri.amount AS document_price, ",
+              "",
+              "dsri.created AS document_date, ",
+              "",
+              "dsri.quantity AS quantity_in_document,",
+              "'supplier_refusal' AS type_of_document ",
+              "",
+              "FROM document_supplier_refusal_item AS dsri ",
+              "",
+              "",
+              "",
+              "UNION ",
+              "",
+              "",
+              "",
+              "SELECT ",
+              "",
+              "dori.id AS dociment_id, ",
+              "",
+              "dori.amount AS document_price, ",
+              "",
+              "dori.created AS document_date, ",
+              "",
+              "dori.quantity AS quantity_in_document,",
+              "'order' AS type_of_document ",
+              "",
+              "",
+              "",
+              "FROM document_order_item AS dori ) AS doc ",
+              "",
+              "ON dori.id = doc.document_id ",
+              "",
+              "",
+              "",
+              "WHERE YEAR(dor.created) >= 2021"
+            ]
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Запрос"
+          },
+          {
+            "name": "QueryEditorSerialization",
+            "value": [
+              "<?xml version=\"1.0\" encoding=\"UTF-16\"?><Gemini xmlns=\"QueryEditorSerialization\"><AnnotationContent><![CDATA[<RSQueryCommandText>SELECT ",
+              "",
+              "dor.id AS order_id, ",
+              "",
+              "ct.id AS customer_contractor_id, ",
+              "",
+              "ct.title AS contractor, ",
+              "",
+              "st.title AS customer_storage, ",
+              "",
+              "st.id  AS customer_storage_id, ",
+              "",
+              "ct1.id AS supplier_id, ",
+              "",
+              "ct1.title AS supplier, ",
+              "",
+              "st1.id AS supplier_storage_id, ",
+              "",
+              "st1.title AS supplier_storage_title, ",
+              "",
+              "dori.standard_article AS article, ",
+              "",
+              "dori.standard_brand_title AS brand_title, ",
+              "",
+              "doc.document_date AS date_document, ",
+              "",
+              "doc.document_price AS price_document,",
+              "doc.type_of_document AS type_document, ",
+              "",
+              "doc.quantity_in_document AS quantity_in_document ",
+              " ",
+              "",
+              "",
+              "FROM document_order AS dor ",
+              " ",
+              "",
+              "JOIN document_order_item AS dori ",
+              "",
+              "ON dor.id = dori.order_id ",
+              " ",
+              "",
+              "",
+              "JOIN contractor AS ct ",
+              "",
+              "ON dor.customer_contractor_id = ct.id ",
+              "",
+              "",
+              "",
+              "JOIN contractor AS ct1 ",
+              "",
+              "ON dor.supplier_contractor_id = ct1.id ",
+              " ",
+              "",
+              "",
+              "JOIN storage AS st ",
+              "",
+              "ON st.id = dor.customer_storage_id ",
+              "",
+              "",
+              "",
+              "JOIN storage AS st1 ",
+              "",
+              "ON st1.id = dor.supplier_storage_id ",
+              "",
+              "",
+              "",
+              "LEFT JOIN (SELECT ",
+              "",
+              "dsi.order_item_id AS document_id, ",
+              "",
+              "dsi.amount AS document_price, ",
+              "",
+              "dsi.created AS document_date, ",
+              "",
+              "dsi.quantity AS quantity_in_document,",
+              "'shipment' AS type_of_document ",
+              "",
+              "FROM document_shipment_item AS dsi ",
+              " ",
+              "",
+              "",
+              "UNION",
+              " ",
+              "",
+              "",
+              "SELECT ",
+              "",
+              "dcri.order_item_id AS document_id, ",
+              "",
+              "dcri.amount AS document_price, ",
+              "",
+              "dcri.created AS document_date, ",
+              "",
+              "dcri.quantity AS quantity_in_document,",
+              "'customer_refusal' AS type_of_document ",
+              "",
+              "",
+              "",
+              "FROM document_customer_refusal_item AS dcri ",
+              "",
+              "",
+              "",
+              "UNION ",
+              "",
+              "",
+              "",
+              "SELECT ",
+              "",
+              "dsri.order_item_id AS document_id, ",
+              "",
+              "dsri.amount AS document_price, ",
+              "",
+              "dsri.created AS document_date, ",
+              "",
+              "dsri.quantity AS quantity_in_document,",
+              "'supplier_refusal' AS type_of_document ",
+              "",
+              "FROM document_supplier_refusal_item AS dsri ",
+              "",
+              "",
+              "",
+              "UNION ",
+              "",
+              "",
+              "",
+              "SELECT ",
+              "",
+              "dori.id AS dociment_id, ",
+              "",
+              "dori.amount AS document_price, ",
+              "",
+              "dori.created AS document_date, ",
+              "",
+              "dori.quantity AS quantity_in_document,",
+              "'order' AS type_of_document ",
+              "",
+              "",
+              "",
+              "FROM document_order_item AS dori ) AS doc ",
+              "",
+              "ON dori.id = doc.document_id ",
+              "",
+              "",
+              "",
+              "WHERE YEAR(dor.created) >= 2021</RSQueryCommandText><RSQueryCommandType>Text</RSQueryCommandType><RSQueryDesignState></RSQueryDesignState>]]></AnnotationContent></Gemini>"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "slider",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "perc",
+            "dataType": "double",
+            "isNameInferred": false,
+            "isDataTypeInferred": true,
+            "sourceColumn": "[Value]",
+            "formatString": "0.0000%;-0.0000%;0.0000%"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "CalculatedTable 1",
+            "source": {
+              "type": "calculated",
+              "expression": " GENERATESERIES(0, 1.000001, 0.000001)"
+            }
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "4210abc8-8487-4266-82e1-8f89a0f3b96f",
+        "fromTable": "document_customer_refusal",
+        "fromColumn": "supplier_contractor_id",
+        "toTable": "contractor",
+        "toColumn": "id",
+        "isActive": false
+      },
+      {
+        "name": "e51e09f7-6a7c-4596-b0bc-b9b3fe3730e2",
+        "fromTable": "document_customer_refusal",
+        "fromColumn": "customer_storage_id",
+        "toTable": "storage",
+        "toColumn": "id",
+        "isActive": false
+      },
+      {
+        "name": "08cec6be-fd31-4619-88d3-94292b796706",
+        "fromTable": "document_customer_refusal",
+        "fromColumn": "supplier_storage_id",
+        "toTable": "storage",
+        "toColumn": "id",
+        "isActive": false
+      },
+      {
+        "name": "79caddba-c1d9-47a7-b1c9-d95a12baa002",
+        "fromTable": "document_customer_refusal_item",
+        "fromColumn": "order_item_id",
+        "toTable": "document_order_item",
+        "toColumn": "id",
+        "isActive": false
+      },
+      {
+        "name": "8da4bfe6-8c45-4131-86a2-b30981149d63",
+        "fromTable": "document_customer_refusal_item",
+        "fromColumn": "standard_id",
+        "toTable": "standard",
+        "toColumn": "id"
+      },
+      {
+        "name": "f46a890e-54b8-4954-b4af-a9ed41c9d855",
+        "fromTable": "document_order",
+        "fromColumn": "supplier_contractor_id",
+        "toTable": "contractor",
+        "toColumn": "id",
+        "isActive": false
+      },
+      {
+        "name": "bf5b594f-6eb2-484b-b22e-d42d095d0f78",
+        "fromTable": "document_order",
+        "fromColumn": "customer_storage_id",
+        "toTable": "storage",
+        "toColumn": "id",
+        "isActive": false
+      },
+      {
+        "name": "529aef4d-50e6-41d9-9305-df27802fc1a1",
+        "fromTable": "document_order",
+        "fromColumn": "supplier_storage_id",
+        "toTable": "storage",
+        "toColumn": "id",
+        "isActive": false
+      },
+      {
+        "name": "3bc5d089-5911-4695-9a27-b63b43c2093f",
+        "fromTable": "document_order_item",
+        "fromColumn": "order_id",
+        "toTable": "document_order",
+        "toColumn": "id"
+      },
+      {
+        "name": "2696647d-4992-4261-9dd3-726b09589c66",
+        "fromTable": "document_order_item",
+        "fromColumn": "standard_id",
+        "toTable": "standard",
+        "toColumn": "id"
+      },
+      {
+        "name": "54cf6ced-4b07-40df-8ca1-cee816c453e2",
+        "fromTable": "document_shipment",
+        "fromColumn": "supplier_contractor_id",
+        "toTable": "contractor",
+        "toColumn": "id",
+        "isActive": false
+      },
+      {
+        "name": "9c7ec326-ef3e-4f05-9795-979a699eacf4",
+        "fromTable": "document_shipment",
+        "fromColumn": "customer_storage_id",
+        "toTable": "storage",
+        "toColumn": "id",
+        "isActive": false
+      },
+      {
+        "name": "3680d0cc-2d2c-4d2d-96c9-08780d939d5c",
+        "fromTable": "document_shipment",
+        "fromColumn": "supplier_storage_id",
+        "toTable": "storage",
+        "toColumn": "id",
+        "isActive": false
+      },
+      {
+        "name": "2eb61f82-2845-4052-985f-0656d5231f55",
+        "fromTable": "document_shipment_item",
+        "fromColumn": "shipment_id",
+        "toTable": "document_shipment",
+        "toColumn": "id",
+        "isActive": false
+      },
+      {
+        "name": "986bf915-adf3-49a1-8da3-8f42d46caba1",
+        "fromTable": "document_shipment_item",
+        "fromColumn": "standard_id",
+        "toTable": "standard",
+        "toColumn": "id",
+        "isActive": false
+      },
+      {
+        "name": "6c8435fb-5901-4254-b23c-513ca5d722bd",
+        "fromTable": "document_supplier_refusal",
+        "fromColumn": "supplier_contractor_id",
+        "toTable": "contractor",
+        "toColumn": "id",
+        "isActive": false
+      },
+      {
+        "name": "1c09358d-a965-4335-8b24-ed6ab62afc1a",
+        "fromTable": "document_supplier_refusal",
+        "fromColumn": "customer_storage_id",
+        "toTable": "storage",
+        "toColumn": "id",
+        "isActive": false
+      },
+      {
+        "name": "b16c8e1b-bc98-4661-8caa-02ac9805d34c",
+        "fromTable": "document_supplier_refusal",
+        "fromColumn": "supplier_storage_id",
+        "toTable": "storage",
+        "toColumn": "id",
+        "isActive": false
+      },
+      {
+        "name": "ee3b1d88-dfe7-4166-9218-2a3104547419",
+        "fromTable": "document_supplier_refusal_item",
+        "fromColumn": "refusal_id",
+        "toTable": "document_supplier_refusal",
+        "toColumn": "id",
+        "isActive": false
+      },
+      {
+        "name": "b8d8f300-4aaa-440c-8a52-dabde1c6c804",
+        "fromTable": "document_supplier_refusal_item",
+        "fromColumn": "standard_id",
+        "toTable": "standard",
+        "toColumn": "id",
+        "isActive": false
+      },
+      {
+        "name": "ea2a80f8-07c4-42cf-baf4-d6d65b3b6b25",
+        "fromTable": "document_customer_refusal",
+        "fromColumn": "customer_contractor_id",
+        "toTable": "contractor",
+        "toColumn": "id"
+      },
+      {
+        "name": "ba969fee-5b91-41b6-bd8e-d1416c10d770",
+        "fromTable": "document_customer_refusal_item",
+        "fromColumn": "refusal_id",
+        "toTable": "document_customer_refusal",
+        "toColumn": "id"
+      },
+      {
+        "name": "631a32f0-84f0-4926-b462-080b79938f6d",
+        "fromTable": "document_order",
+        "fromColumn": "customer_contractor_id",
+        "toTable": "contractor",
+        "toColumn": "id"
+      },
+      {
+        "name": "6d6b6d0c-9524-489b-89c2-38f729d06178",
+        "fromTable": "document_shipment",
+        "fromColumn": "customer_contractor_id",
+        "toTable": "contractor",
+        "toColumn": "id"
+      },
+      {
+        "name": "a0e1ee27-59bf-45c0-b033-460981cb5f9f",
+        "fromTable": "document_shipment_item",
+        "fromColumn": "order_item_id",
+        "toTable": "document_order_item",
+        "toColumn": "id"
+      },
+      {
+        "name": "8bd17f00-2a04-4b31-ad36-095ccad0945f",
+        "fromTable": "document_supplier_refusal",
+        "fromColumn": "customer_contractor_id",
+        "toTable": "contractor",
+        "toColumn": "id"
+      },
+      {
+        "name": "96f87369-f194-4258-a9db-8788d7bcfaf4",
+        "fromTable": "document_supplier_refusal_item",
+        "fromColumn": "order_item_id",
+        "toTable": "document_order_item",
+        "toColumn": "id"
+      },
+      {
+        "name": "f98b2caf-4649-4ff6-b938-dfc2f3683007",
+        "fromTable": "storage",
+        "fromColumn": "contractor_id",
+        "toTable": "contractor",
+        "toColumn": "id"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "400"
+      }
+    ]
+  },
+  "id": "SemanticModel"
+}
